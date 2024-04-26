@@ -13,6 +13,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+
 .searchdiv {
     display: flex;
     justify-content: center;
@@ -53,11 +54,15 @@ th {
 }
 
 th:hover {
-    color: rgb(93, 93, 93);
+    color: rgb(255, 255, 255);
 }
 
 td {
     padding: 8px;
+}
+
+#headerrow:hover {
+    color: black;
 }
 
 tr:nth-child(even) {
@@ -65,11 +70,10 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(even):hover {
-color: #ffffff;
+    color: #ffffff;
 }
 
 
 tr:hover {
-color: #297e91;
+    color: #297e91;
 }
-
