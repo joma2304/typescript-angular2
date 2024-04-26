@@ -34,16 +34,16 @@ export class CoursesComponent {
     );
 
     if (this.sortField) {
-      this.filteredCourseList.sort((a, b) => {
-        const fieldA = a[this.sortField].toLowerCase();
-        const fieldB = b[this.sortField].toLowerCase();
-        let comparison = 0;
-        if (fieldA > fieldB) {
+      this.filteredCourseList.sort((a, b) => { //Sorteringsfunktion 
+        const fieldA = a[this.sortField].toLowerCase(); //Gör det som ska jämföras till små bokstäver
+        const fieldB = b[this.sortField].toLowerCase(); //Gör det som ska jämföras till små bokstäver
+        let comparison = 0; //Jämförelsevärde om de är lika stora
+        if (fieldA > fieldB) { //Om field a är större än b får comparison värde 1
           comparison = 1;
-        } else if (fieldA < fieldB) {
+        } else if (fieldA < fieldB) { //Om field a är mindre än b får comparison värde -1
           comparison = -1;
         }
-        return this.sortDirection === 'asc' ? comparison : -comparison;
+        return this.sortDirection === 'asc' ? comparison : -comparison; // Ifall sortdirection = asc så kommer comparison att retuneras, ifall den inte är det så kommer det motsatta värdet av comparison att retuneras istället
       });
     }
   }
