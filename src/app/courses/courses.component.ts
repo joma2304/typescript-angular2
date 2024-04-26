@@ -12,11 +12,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './courses.component.scss'
 })
 export class CoursesComponent {
-  courseList: Course[] = []; //Lagrar hämtade kurser
-  filteredCourseList: Course[] = []; //LAgrar dem kurser som matchar sökning
+  courseList: Course[] = []; //Lagrar hämtade kurser i en array
+  filteredCourseList: Course[] = []; //LAgrar dem kurser som matchar sökning i array
   searchString: string = ''; //Sökningen lagras här
   sortField: string = ''; //LAgrar vilket fält som ska användas för sortering
-  sortDirection: 'asc' | 'desc' = 'asc'; //Lagrar riktning på sorteringen, stigande eller fallande
+  sortDirection: 'asc' | 'desc' = 'asc'; //Lagrar riktning på sorteringen, stigande eller fallande, stigande som standrad
 
   constructor(private courseservice: CourseService) { }
 

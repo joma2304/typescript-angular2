@@ -8,7 +8,7 @@ h1 {
 .topdiv {
     border: 2px solid black;
     border-radius: 2px;
-    background-color: #92eab4;
+    background-color: #92eae0;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -43,11 +43,12 @@ table {
 }
 
 th {
-    background-color: #c0ecd8;
+    background-color: #c0ece7;
     text-align: left;
     padding: 8px;
     cursor: pointer;
     text-decoration: underline;
+    font-family: "Goldman", sans-serif;
 }
 
 th:hover {
@@ -60,10 +61,10 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #c0ecd8;
+    background-color: #c0ece7;
 }
 
 
 tr:hover {
-    background-color: #92eab4;
+    background-color: #92eae6;
 }
