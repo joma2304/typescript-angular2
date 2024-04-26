@@ -8,7 +8,7 @@ h1 {
 .topdiv {
     border: 2px solid rgb(58, 121, 144);
     border-radius: 2px;
-    background-color: #92eae0;
+    background-color: #6aa4ba;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -44,7 +44,7 @@ table {
 }
 
 th {
-    background-color: #92eae0;
+    background-color: #6aa4ba;
     text-align: left;
     padding: 8px;
     cursor: pointer;
@@ -61,10 +61,15 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #c0ece7;
+    background-color: #6aa4ba;
+}
+
+tr:nth-child(even):hover {
+color: #ffffff;
 }
 
 
 tr:hover {
-    background-color: #92eae6;
+color: #297e91;
 }
+
